@@ -8,3 +8,9 @@
   padding: 5px 0;
   border: 1px solid gray;
 }
+.icon{
+  padding: 10px;
+  background-color: rgba(250, 16, 16, 0.13);
+  border-radius: 50%;
+  cursor: pointer;
+}
