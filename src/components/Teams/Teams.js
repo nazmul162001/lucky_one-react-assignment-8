@@ -26,6 +26,12 @@ const Teams = () => {
   return (
     <div className='team-container row'>
       <div className="col-lg-9 col-md-9 col-sm-12 text-center text-lg-start">
+        {/* title section  */}
+        <div className="title-section text-center">
+            <h1 className='text-danger fw-bold'>Start Your Business</h1>
+            <h3 className='text-secondary'>Choose Your Team</h3>
+        </div>
+
         <div className="our-employe">
           {
             teams.map(team => <Team 

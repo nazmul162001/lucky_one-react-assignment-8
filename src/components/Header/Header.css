@@ -1,3 +1,23 @@
 nav{
   height: 80px;
 }
+
+.nav-menu a{
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  nav{
+    flex-direction: column;
+  }
+  .nav-menu a{
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
