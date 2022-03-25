@@ -1,0 +1,10 @@
+.cart-details img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.btn-style-2{
+  padding: 5px 0;
+  border: 1px solid gray;
+}
