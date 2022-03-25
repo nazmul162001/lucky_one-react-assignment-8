@@ -13,7 +13,7 @@ const Cart = ({teams, details, setDetails}) => {
   return (
     <div>
       <h3>Total Employe: {teams.length}</h3>
-      <h5>Selected Employe {details.length}</h5>
+      <h5>Selected Employe: {details.length}</h5>
       {
         details.map(add => {
           return (

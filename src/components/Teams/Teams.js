@@ -29,7 +29,7 @@ const Teams = () => {
         {/* title section  */}
         <div className="title-section text-center">
             <h1 className='text-danger fw-bold'>Start Your Business</h1>
-            <h3 className='text-secondary'>Choose Your Team</h3>
+            <h3 className='text-secondary'>Choose 4 Employe </h3>
         </div>
 
         <div className="our-employe">
@@ -43,7 +43,7 @@ const Teams = () => {
           }
         </div>
       </div>
-      <div className="col-lg-3 col-md-3 col-sm-12 text-center text-lg-start">
+      <div className="col-lg-3 col-md-3 col-sm-12 text-center text-lg-start cart-bg">
         <div className="cart-details">
           <Cart 
           teams = {teams}
