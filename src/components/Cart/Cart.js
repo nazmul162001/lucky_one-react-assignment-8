@@ -10,6 +10,17 @@ const Cart = ({teams, details, setDetails}) => {
     // console.log(remove.id);
   }
 
+  // get random employe 
+  const getRandom = () => {
+    if(details.length > 0){
+      const randomSelect = Math.floor(Math.random() * details.length)
+      setDetails([details[randomSelect]])
+    }
+    else{
+      alert('Select employe first')
+    }
+  }
+
   return (
     <div>
       <h3>Total Employe: {teams.length}</h3>
@@ -29,9 +40,9 @@ const Cart = ({teams, details, setDetails}) => {
           )
         })
       }
-      <button className='btn-style-2 w-75 text-danger my-1'>SELECT 1 EMPLOYE FOR ME</button>
+      <button onClick={getRandom} className='btn-style-2 w-75 text-danger my-1'>SELECT 1 EMPLOYE FOR ME</button>
       <br />
-      <button className='btn-style-2 w-75 text-success'>SELECT AGAIN</button>
+      <button onClick={() => setDetails([])} className='btn-style-2 w-75 text-success'>SELECT AGAIN</button>
     </div>
   );
 };

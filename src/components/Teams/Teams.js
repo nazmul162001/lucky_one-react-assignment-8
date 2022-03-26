@@ -15,11 +15,16 @@ const Teams = () => {
 
   // handleClick
   const handleClick = team => {
-    if(details.find(item => item.id === team.id)){
-      alert('Already Exists')
+    if(details.length >= 4){
+      alert('Maximum Added')
     }
     else{
-      setDetails([...details, team]);
+      if(details.find(item => item.id === team.id)){
+        alert('Already Exists')
+      }
+      else{
+        setDetails([...details, team]);
+      }
     }
   } 
 

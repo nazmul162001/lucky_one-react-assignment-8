@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <nav className='d-flex justify-content-between align-items-center bg-danger w-100'>
+    <nav className='d-flex justify-content-between align-items-center w-100'>
       <div className="logo fs-3 fw-bold text-light">Logo</div>
       <div className="nav-menu">
         <a className='text-decoration-none text-light' href="/Home">Home</a>
