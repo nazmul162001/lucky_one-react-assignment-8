@@ -20,12 +20,12 @@ const Teams = () => {
 
   // handleClick
   const handleClick = team => {
-    if(details.length >= 4){
-      setShow2(true)
+    if(details.find(item => item.id === team.id)){
+      setShow(true)
     }
     else{
-      if(details.find(item => item.id === team.id)){
-        setShow(true)
+      if(details.length >= 4){
+        setShow2(true)
       }
       else{
         setDetails([...details, team]);

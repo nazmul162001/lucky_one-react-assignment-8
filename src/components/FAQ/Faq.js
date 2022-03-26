@@ -1,9 +1,10 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
+import './Faq.css'
 
 const Faq = () => {
   return (
-    <div className='py-5 my-5'>
+    <div className='py-5 my-5 faq-section'>
       <Accordion defaultActiveKey= "0">
           <Accordion.Item eventKey='0'>
             <Accordion.Header>
@@ -41,8 +42,7 @@ const Faq = () => {
               How useState works?
             </Accordion.Header>
             <Accordion.Body>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            useStat is a Hook that allows you add React state to function components. We call it inside in a function component to add some local state to it. useState return a pair of the current state value and a function that lets you update it.React will preserve this state between re-renders.We can call this function from an event handler or somewhwer else.The useState() hook can be used to keep track of strings, numbers, booleans, arrays, objects etc etc which give us freedom to make complex user interfaces easily.
             </Accordion.Body>
           </Accordion.Item>
       </Accordion>
