@@ -1,11 +1,16 @@
+import { Modal } from 'bootstrap';
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import Modals from '../Modals/Modals';
+import Modals2 from '../Modals2/Modals2';
 import Team from '../Team/Team';
 import './Teams.css';
 
 const Teams = () => {
   const [teams, setTeams] = useState([]);
   const [details, setDetails] = useState([]);
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
 
   useEffect(() => {
     fetch('data.json')
@@ -16,11 +21,11 @@ const Teams = () => {
   // handleClick
   const handleClick = team => {
     if(details.length >= 4){
-      alert('Maximum Added')
+      setShow2(true)
     }
     else{
       if(details.find(item => item.id === team.id)){
-        alert('Already Exists')
+        setShow(true)
       }
       else{
         setDetails([...details, team]);
@@ -30,6 +35,14 @@ const Teams = () => {
 
   return (
     <div className='team-container row'>
+      <Modals 
+      show = {show}
+      setShow = {setShow}
+      />
+      <Modals2 
+      show2 = {show2}
+      setShow2 = {setShow2}
+      />
       <div className="col-lg-9 col-md-9 col-sm-12 text-center text-lg-start">
         {/* title section  */}
         <div className="title-section text-center">
