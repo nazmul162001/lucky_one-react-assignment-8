@@ -1,5 +1,6 @@
 nav{
   height: 80px;
+  padding: 0 100px;
 }
 
 .nav-menu a{
@@ -15,9 +16,10 @@ nav{
 @media screen and (max-width: 600px) {
   nav{
     flex-direction: column;
+    padding: 0;
   }
   .nav-menu a{
-    font-size: 18px;
-    padding: 0 10px;
+    font-size: 14px;
+    padding: 0 5px;
   }
 }
