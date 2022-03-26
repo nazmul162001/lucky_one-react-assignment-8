@@ -43,7 +43,7 @@ const Teams = () => {
       show2 = {show2}
       setShow2 = {setShow2}
       />
-      <div className="col-lg-9 col-md-9 col-sm-12 text-center text-lg-start">
+      <div className="col-lg-9 col-md-9 col-sm-12 col-12 text-center text-lg-start">
         {/* title section  */}
         <div className="title-section text-center">
             <h1 className='text-danger fw-bold'>Start Your Business</h1>
@@ -61,7 +61,7 @@ const Teams = () => {
           }
         </div>
       </div>
-      <div className="col-lg-3 col-md-3 col-sm-12 text-center text-lg-start cart-bg">
+      <div className="col-lg-3 col-md-3 col-sm-12 col-12 text-center text-lg-start cart-bg">
         <div className="cart-details">
           <Cart 
           teams = {teams}
