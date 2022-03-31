@@ -22,7 +22,7 @@ const Cart = ({teams, details, setDetails}) => {
   }
 
   return (
-    <div>
+    <div className='review-cart'>
       <h3>Total Employe: {teams.length}</h3>
       <h5>Selected Employe: {details.length}</h5>
       {

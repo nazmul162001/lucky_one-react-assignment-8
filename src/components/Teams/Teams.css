@@ -4,10 +4,10 @@
   grid-gap: 2rem;
   margin: 3rem 0 1rem 2rem;
 }
-/* .cart-details{
+.cart-details{
   position: sticky;
   top: 0;
-} */
+}
 .title-section h1{
   border-bottom: 5px solid rgb(233, 99, 21);
   border-radius: 20px;
